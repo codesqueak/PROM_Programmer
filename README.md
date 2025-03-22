@@ -21,6 +21,8 @@ This board has been designed to allow the programming and editing of the above P
 
 For full documentation, see the [pdf here](PROM_Programmer.pdf)
 
+ ![Timings](scope.png)
+
  ![PCB From JLCPCB](pcb.png)
 
  ![Built PCB](built_pcb.png)
