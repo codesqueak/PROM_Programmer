@@ -23,6 +23,14 @@ For full documentation, see the [pdf here](PROM_Programmer.pdf)
 
  ![Timings](scope.png)
 
+* Yellow = Program Power (Vcc) (10v)
+* Pink = Program Pulse (16v)
+* Cyan = Chip Enable (CE) (5v)
+
+Supply power is first applied (10v), then the programming voltage applied (16v), followed by the CE low to perform the programming step.
+
+
+
  ![PCB From JLCPCB](pcb.png)
 
  ![Built PCB](built_pcb.png)
