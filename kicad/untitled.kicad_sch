@@ -1,19 +1,23 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "bac30b9d-2d88-4ed3-9974-68d932057492")
 	(paper "A3")
 	(title_block
 		(title "PROM Programmer")
-		(date "2024-11-17")
-		(rev "V1.1")
+		(date "2025-03-27")
+		(rev "V1.4")
 	)
 	(lib_symbols
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -60,6 +64,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -81,10 +94,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -105,7 +130,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -117,22 +142,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -178,10 +191,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Network08_Split"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -437,10 +453,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Push_SPDT"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -570,24 +589,6 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "B"
@@ -598,6 +599,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -624,10 +643,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_SPDT"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -708,7 +730,7 @@
 					)
 				)
 				(circle
-					(center 2.032 -2.54)
+					(center 2.032 2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -719,7 +741,7 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
+					(center 2.032 -2.54)
 					(radius 0.4572)
 					(stroke
 						(width 0)
@@ -743,24 +765,6 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "B"
@@ -771,6 +775,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -797,12 +819,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -874,7 +901,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -886,7 +913,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -917,12 +944,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1013,13 +1045,32 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 140.97 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10424229-9118-4224-befe-92e69d11c8c7")
+	(text "800USP8P1A1M2RE"
+		(exclude_from_sim no)
+		(at 144.78 45.212 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "6c08f4ea-f39a-461b-a549-2557797adb9a")
+	)
+	(text "GW12LCP"
+		(exclude_from_sim no)
+		(at 64.008 46.482 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f8df6bf1-3e37-4d66-84ab-fb7ff2b42618")
 	)
 	(junction
 		(at 143.51 66.04)
@@ -1046,6 +1097,12 @@
 		(uuid "2675a2ae-8a62-49ce-9f4d-d14e1ae890d9")
 	)
 	(junction
+		(at 143.51 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b0cd171-0fef-4f53-8bf6-5a69d4485dbb")
+	)
+	(junction
 		(at 207.01 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1062,12 +1119,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a40e9a3-bf9a-4040-8a79-d649a7d29a80")
-	)
-	(junction
-		(at 143.51 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66ddee2d-dbe9-499d-81c5-cb104c303d02")
 	)
 	(junction
 		(at 38.1 142.24)
@@ -1245,16 +1296,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 167.64) (xy 143.51 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b8f4a22-7067-4273-9d92-0aee50c02532")
-	)
-	(wire
-		(pts
 			(xy 38.1 167.64) (xy 50.8 167.64)
 		)
 		(stroke
@@ -1362,6 +1403,16 @@
 			(type default)
 		)
 		(uuid "82caf284-1676-43e3-8a02-db08c17d3054")
+	)
+	(wire
+		(pts
+			(xy 140.97 167.64) (xy 143.51 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83fc5590-7c0a-4dc3-886f-0122c9ccd06d")
 	)
 	(wire
 		(pts
@@ -1525,16 +1576,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 167.64) (xy 140.97 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dceeded3-4507-4113-9979-4f56dcc6556a")
-	)
-	(wire
-		(pts
 			(xy 207.01 218.44) (xy 218.44 218.44)
 		)
 		(stroke
@@ -1585,7 +1626,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 167.64) (xy 132.08 167.64)
+			(xy 127 167.64) (xy 133.35 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1652,30 +1693,6 @@
 			(type default)
 		)
 		(uuid "ff2d21a9-322c-49bf-98b3-45d175140cc0")
-	)
-	(text "800USP8P1A1M2RE"
-		(exclude_from_sim no)
-		(at 144.78 45.212 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "6c08f4ea-f39a-461b-a549-2557797adb9a")
-	)
-	(text "GW12LCP"
-		(exclude_from_sim no)
-		(at 64.008 46.482 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "f8df6bf1-3e37-4d66-84ab-fb7ff2b42618")
 	)
 	(global_label "LED-G"
 		(shape output)
@@ -2957,6 +2974,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "948fb193-445d-4ea7-8b82-5996f762dc41")
 		)
@@ -3368,6 +3394,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 143.51 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 143.51 123.19 0)
 			(effects
 				(font
@@ -3964,6 +3999,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e6cc1aa-d360-4c0e-986c-b84a0ba936ba")
 		)
@@ -4530,6 +4574,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b52c1ee0-367e-4ccc-a869-0f143f3d156d")
 		)
@@ -4752,6 +4805,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 143.51 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 143.51 224.79 0)
 			(effects
 				(font
@@ -4986,6 +5048,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2cb26be8-0249-472a-a674-36d4f710a29c")
 		)
@@ -5194,6 +5265,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 207.01 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c3e6d59f-cadb-4361-8ba1-2c507601d868")
 		)
@@ -5256,6 +5336,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 207.01 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 207.01 173.99 0)
 			(effects
 				(font

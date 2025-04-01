@@ -29,6 +29,7 @@ For full documentation, see the [pdf here](PROM_Programmer.pdf)
 
 Supply power is first applied (10v), then the programming voltage applied (16v), followed by the CE low to perform the programming step.
 
+Note that the traces have been offset by -1.0v and -2.0v so they do not overlap on the image
 
 
  ![PCB From JLCPCB](pcb.png)
