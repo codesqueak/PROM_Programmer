@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-03-27")
+		(date "2025-04-06")
 		(rev "1.4")
 	)
 	(layers
@@ -31205,7 +31205,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Version 1.2"
+	(gr_text "Version 1.4"
 		(at 68.956386 146.978028 0)
 		(layer "F.SilkS")
 		(uuid "423cc057-27fa-433f-a0b8-fcc72e5c7019")
@@ -32844,6 +32844,18 @@
 				(bold yes)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "CS-014"
+		(at 216.537498 144.623331 0)
+		(layer "B.SilkS")
+		(uuid "77ec933f-eedb-4977-8d95-eca44789eea8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(gr_text "buymeacoffee is a website that connects developers,\ndesigners, artists etc with their communities so that\npeople can express appreciation for their work.\nIf you would like to contribute,\nfeel free to do it at Buy me a coffee!,\n(https://www.buymeacoffee.com/codesqueak),\nand many thanks in advance.\n\n"
