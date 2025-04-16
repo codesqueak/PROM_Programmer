@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-04-06")
-		(rev "1.4")
+		(date "2025-04-14")
+		(rev "1.5")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -1281,7 +1281,7 @@
 			)
 		)
 		(property ki_fp_filters "R?Array?SIP*")
-		(path "/ec64ca77-8330-4454-a37f-867e49489326/b355a4ea-e76f-49ac-8792-79dd4de313c8")
+		(path "/ec64ca77-8330-4454-a37f-867e49489326/edae48a4-b17a-4d3c-870a-48f4ffc5eed5")
 		(sheetname "/Switches and PROM/")
 		(sheetfile "untitled.kicad_sch")
 		(attr through_hole)
@@ -8602,7 +8602,7 @@
 			)
 		)
 		(property "Value" "10nf"
-			(at 7.907839 2.872547 0)
+			(at 2.254259 -3.410485 0)
 			(layer "F.SilkS")
 			(uuid "92051ca5-aa49-4451-96a0-7383ce1e4dfc")
 			(effects
@@ -24064,7 +24064,7 @@
 			)
 		)
 		(property ki_fp_filters "SOIC*3.9x8.7mm*P1.27mm*")
-		(path "/c73bde97-414b-42b7-8635-edb79767c4a6/76012f60-2bd8-41d6-8649-53c986d522f1")
+		(path "/c73bde97-414b-42b7-8635-edb79767c4a6/b0ba2c4f-4bd9-43ca-b8be-3768d2d1d879")
 		(sheetname "/Timing Logic/")
 		(sheetfile "Timing Logic.kicad_sch")
 		(attr through_hole)
@@ -31128,6 +31128,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "OUT IN NC"
+		(at 128.921769 63.828529 0)
+		(layer "F.SilkS")
+		(uuid "2e32be09-10e7-4251-8073-dfc20caf4bd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "1"
 		(at 106.750314 95.513949 0)
 		(layer "F.SilkS")
@@ -31180,7 +31193,7 @@
 		)
 	)
 	(gr_text "On"
-		(at 126.589201 61.29757 0)
+		(at 137.880796 61.224674 0)
 		(layer "F.SilkS")
 		(uuid "3dac50ae-1c6c-4869-919f-93e24ade7117")
 		(effects
@@ -31205,7 +31218,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Version 1.4"
+	(gr_text "Version 1.5"
 		(at 68.956386 146.978028 0)
 		(layer "F.SilkS")
 		(uuid "423cc057-27fa-433f-a0b8-fcc72e5c7019")
@@ -31388,7 +31401,7 @@
 		)
 	)
 	(gr_text "Off"
-		(at 137.811318 61.407161 0)
+		(at 126.693046 61.44534 0)
 		(layer "F.SilkS")
 		(uuid "bd7579d5-a0e5-4c85-8346-4699bc8516f4")
 		(effects
@@ -37309,7 +37322,7 @@
 	)
 	(segment
 		(start 146.466151 105.33421)
-		(end 146.466151 119.091211)
+		(end 146.466151 125.33484)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 44)
@@ -37322,14 +37335,6 @@
 		(layer "F.Cu")
 		(net 44)
 		(uuid "7ccfece1-4a7d-4ec3-9447-0072732f633d")
-	)
-	(segment
-		(start 146.466151 119.091211)
-		(end 146.466151 125.33484)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 44)
-		(uuid "aef9de09-ce8b-48d3-b345-19ecd5719ab5")
 	)
 	(segment
 		(start 146.466151 125.33484)
