@@ -31063,6 +31063,19 @@
 		(layer "Edge.Cuts")
 		(uuid "b2a79fc2-de40-4eb2-a00e-3404d345b8b8")
 	)
+	(gr_text "Program"
+		(at 178.790086 85.998869 0)
+		(layer "F.SilkS")
+		(uuid "13b0c4d0-1d5e-4745-b51f-6d348c9f0f38")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "1\n\n2\n\n3"
 		(at 168.068559 86.642818 0)
 		(layer "F.SilkS")
@@ -31270,8 +31283,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "<-- Program\n\n\n\n    Control -->"
-		(at 208.630704 82.085949 0)
+	(gr_text "<-- Program\n\n\n\n    Read -->"
+		(at 211.071613 82.133825 0)
 		(layer "F.SilkS")
 		(uuid "4f1412dc-ffdc-4d79-9b46-f7b27407393d")
 		(effects
@@ -32828,6 +32841,19 @@
 			(font
 				(size 1.5 1.5)
 				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Press To"
+		(at 178.839736 74.231872 0)
+		(layer "F.SilkS")
+		(uuid "f33a52c8-c6e9-4cc5-9f44-464cbd771f5f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
 				(bold yes)
 			)
 			(justify left bottom)
