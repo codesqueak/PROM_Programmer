@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-04-06")
-		(rev "V1.4")
+		(date "2025-05-24")
+		(rev "2.0")
 	)
 	(lib_symbols
 		(symbol "AA_Custom:+16V"
@@ -3836,6 +3836,12 @@
 		(uuid "3d1d4625-acd6-41b6-8bd4-d6dde52d90d9")
 	)
 	(junction
+		(at 101.6 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d4727f3-d23d-4804-80ff-c0653abb8f87")
+	)
+	(junction
 		(at 322.58 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4171,6 +4177,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 205.74) (xy 113.03 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b37f557-065c-40fc-8f11-5933fb0c8bda")
+	)
+	(wire
+		(pts
 			(xy 322.58 67.31) (xy 322.58 97.79)
 		)
 		(stroke
@@ -4188,6 +4204,16 @@
 			(type default)
 		)
 		(uuid "6fadbd74-12d4-4b66-aaaf-7c4d0582d40b")
+	)
+	(wire
+		(pts
+			(xy 101.6 205.74) (xy 101.6 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77c6e50b-f94f-4b7f-9510-7fbd3a36fb4b")
 	)
 	(wire
 		(pts
@@ -4371,7 +4397,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 198.12) (xy 101.6 203.2)
+			(xy 101.6 198.12) (xy 101.6 205.74)
 		)
 		(stroke
 			(width 0)
@@ -6334,7 +6360,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 203.2 0)
+		(at 101.6 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6343,7 +6369,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d7373ac-83d3-4b7a-bb75-efcc0d64746c")
 		(property "Reference" "#PWR010"
-			(at 101.6 209.55 0)
+			(at 101.6 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,7 +6378,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 208.28 0)
+			(at 101.6 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,7 +6386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 203.2 0)
+			(at 101.6 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6369,7 +6395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 203.2 0)
+			(at 101.6 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +6404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 203.2 0)
+			(at 101.6 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6457,6 +6483,73 @@
 			(project "PROMProgrammer"
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e194911-cc40-4710-bee4-9cf503c4b498")
+		(property "Reference" "TP7"
+			(at 115.57 201.1679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 203.7079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 118.11 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a0601de-f218-4c66-b8ff-733d976ca164")
+		)
+		(instances
+			(project "PROMProgrammer"
+				(path "/aea5f780-7057-4d23-a657-1d11de8949a0"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -7704,7 +7797,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Socket:DIP_Socket-16_W4.3_W5.08_W7.62_W10.16_W10.9_3M_216-3340-00-0602J"
 			(at 204.47 202.438 0)
 			(effects
 				(font
