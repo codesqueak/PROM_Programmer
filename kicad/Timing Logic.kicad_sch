@@ -3985,7 +3985,7 @@
 		)
 		(uuid "a020ffcc-4732-4e57-bd3a-df1cfcdbdae8")
 	)
-	(text "0 = 10V Ouput\n1 = 0V output (BD139 shut down)"
+	(text "0 = 10V Output\n1 = 0V output (BD139 shut down)"
 		(exclude_from_sim no)
 		(at 335.534 151.13 0)
 		(effects
