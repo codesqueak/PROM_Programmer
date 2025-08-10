@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-05-24")
-		(rev "2.0")
+		(date "2025-08-08")
+		(rev "3.1")
 	)
 	(lib_symbols
 		(symbol "4xxx:4017"
@@ -3423,7 +3423,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC108"
+		(symbol "Transistor_BJT:2N3904"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3440,7 +3440,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC108"
+			(property "Value" "2N3904"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -3449,7 +3449,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -3460,7 +3460,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.b-kainka.de/Daten/Transistor/BC108.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3470,7 +3470,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 30V Vce, Low Noise General Purpose NPN Transistor, TO-18"
+			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3479,7 +3479,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN low noise transistor"
+			(property "ki_keywords" "NPN Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3488,7 +3488,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?18*"
+			(property "ki_fp_filters" "TO?92*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3497,7 +3497,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC108_0_1"
+			(symbol "2N3904_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -3534,7 +3534,7 @@
 					)
 				)
 			)
-			(symbol "BC108_1_1"
+			(symbol "2N3904_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -3965,7 +3965,7 @@
 		)
 		(uuid "301a3a9f-7b9d-4dd0-8557-ad987422c1f7")
 	)
-	(text "Resistor = 2.5 / Io \nR = 16/0.065 = 38 \n\nIo = 2.5/47 = 53mA\n\nR = 1/(1/47 + 1/220) = 38.2\n"
+	(text "Resistor = 2.5 / Io \nR = 2.5/0.065 = 38 \n\nIo = 2.5/47 = 53mA\n\nR = 1/(1/47 + 1/220) = 38.2\n"
 		(exclude_from_sim no)
 		(at 255.778 56.896 0)
 		(effects
@@ -4512,7 +4512,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 124.46) (xy 279.4 160.02)
+			(xy 279.4 127) (xy 279.4 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4772,6 +4772,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 115.57) (xy 271.78 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81a5293c-99b5-4430-8c6b-75336c4b36e1")
+	)
+	(wire
+		(pts
 			(xy 229.87 76.2) (xy 254 76.2)
 		)
 		(stroke
@@ -5012,7 +5022,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 110.49) (xy 279.4 116.84)
+			(xy 279.4 110.49) (xy 279.4 119.38)
 		)
 		(stroke
 			(width 0)
@@ -5029,6 +5039,16 @@
 			(type default)
 		)
 		(uuid "9f8b6854-8faf-46d7-a89c-336202357828")
+	)
+	(wire
+		(pts
+			(xy 271.78 127) (xy 271.78 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0806b97-5b9a-4431-a35c-c70ac8c36ee0")
 	)
 	(wire
 		(pts
@@ -5766,7 +5786,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 279.4 120.65 0)
+		(at 279.4 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5775,15 +5795,6 @@
 		(fields_autoplaced yes)
 		(uuid "0727baaa-48ba-4ef5-ab86-f3490fa8a028")
 		(property "Reference" "R26"
-			(at 281.94 119.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
 			(at 281.94 121.9199 0)
 			(effects
 				(font
@@ -5792,8 +5803,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10K"
+			(at 281.94 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 277.622 120.65 90)
+			(at 277.622 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5802,7 +5822,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 279.4 120.65 0)
+			(at 279.4 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +5831,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 279.4 120.65 0)
+			(at 279.4 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,17 +6066,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC108")
-		(at 309.88 152.4 0)
+		(lib_id "Transistor_BJT:2N3904")
+		(at 227.33 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e7c7e77-d025-48f9-a53d-0b4ebc082035")
-		(property "Reference" "Q3"
-			(at 314.96 151.1299 0)
+		(uuid "1de78778-038c-4ff9-ade5-a4699016087d")
+		(property "Reference" "Q6"
+			(at 232.41 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,8 +6083,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC108"
-			(at 314.96 153.6699 0)
+		(property "Value" "2N3904"
+			(at 232.41 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,8 +6092,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
-			(at 314.96 154.305 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 232.41 57.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6084,8 +6103,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.b-kainka.de/Daten/Transistor/BC108.pdf"
-			(at 309.88 152.4 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+			(at 227.33 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6094,8 +6113,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1A Ic, 30V Vce, Low Noise General Purpose NPN Transistor, TO-18"
-			(at 309.88 152.4 0)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 227.33 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6103,19 +6122,19 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "aee10655-2af5-4f7c-b0fc-8f27253351fc")
+		(pin "1"
+			(uuid "b0685f91-3881-4705-91a8-b3a08a3c66b4")
 		)
 		(pin "2"
-			(uuid "a34a06c2-913e-4603-99a7-52ddd0093527")
+			(uuid "6538b1c6-f93a-4d8b-a3f3-ce132f1db0af")
 		)
-		(pin "1"
-			(uuid "b9f003ba-926d-4a47-bfcf-ca02c008b31a")
+		(pin "3"
+			(uuid "ede079b3-8e9d-4780-826b-41247f582ff7")
 		)
 		(instances
-			(project ""
+			(project "PROMProgrammer"
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
-					(reference "Q3")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -6394,82 +6413,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC108")
-		(at 227.33 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32476de5-a174-45da-8a74-564c3c39707a")
-		(property "Reference" "Q6"
-			(at 232.41 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC108"
-			(at 232.41 57.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
-			(at 232.41 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.b-kainka.de/Daten/Transistor/BC108.pdf"
-			(at 227.33 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 30V Vce, Low Noise General Purpose NPN Transistor, TO-18"
-			(at 227.33 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "339d23f2-d7e5-460a-a07d-74f181720032")
-		)
-		(pin "2"
-			(uuid "a76c5da0-0a77-411f-9bac-dcbdc3a0e6d1")
-		)
-		(pin "3"
-			(uuid "711baae0-a0b6-42d2-b452-9147ef20c7f0")
-		)
-		(instances
-			(project ""
-				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 266.7 160.02 90)
 		(unit 1)
@@ -6537,82 +6480,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC108")
-		(at 274.32 110.49 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "415abde6-bbed-481b-8659-c1c9cf9fa791")
-		(property "Reference" "Q2"
-			(at 269.24 111.7601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC108"
-			(at 269.24 109.2201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
-			(at 269.24 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.b-kainka.de/Daten/Transistor/BC108.pdf"
-			(at 274.32 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 30V Vce, Low Noise General Purpose NPN Transistor, TO-18"
-			(at 274.32 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2be5fcf9-55e3-418d-b39b-a1c093ce16da")
-		)
-		(pin "2"
-			(uuid "be73853b-2aef-481d-9f31-968d9b95575e")
-		)
-		(pin "1"
-			(uuid "9775874c-68bc-4f67-a5cc-e54143fdeb04")
-		)
-		(instances
-			(project ""
-				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 321.31 133.35 90)
 		(unit 1)
@@ -6629,7 +6496,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "820"
 			(at 321.31 130.81 90)
 			(effects
 				(font
@@ -6674,6 +6541,81 @@
 			(project ""
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:2N3904")
+		(at 295.91 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a7557f5-ddf8-4442-8dd8-6566600af7d1")
+		(property "Reference" "Q5"
+			(at 300.99 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3904"
+			(at 300.99 204.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 300.99 205.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+			(at 295.91 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 295.91 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75582f35-17b2-481b-af47-facbe60bbbf4")
+		)
+		(pin "2"
+			(uuid "3ee06b81-149c-47b1-9e19-19a6922ddbbe")
+		)
+		(pin "3"
+			(uuid "b795deae-03e0-49dc-a05f-96a77a48d6c4")
+		)
+		(instances
+			(project "PROMProgrammer"
+				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -6741,6 +6683,75 @@
 			(project "PROMProgrammer"
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
 					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 271.78 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55a10ab2-417b-453f-bdac-030ca1ab1d7f")
+		(property "Reference" "R9"
+			(at 265.176 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 265.176 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 270.002 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 271.78 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "29c75bc8-a72e-438b-a8e9-79820bc03681")
+		)
+		(pin "1"
+			(uuid "950cf3a7-9e0b-49d1-8f97-2051755e4199")
+		)
+		(instances
+			(project "PROMProgrammer"
+				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8250,6 +8261,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:2N3904")
+		(at 309.88 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ad91a96-8199-4d44-885d-f3c66c01301e")
+		(property "Reference" "Q3"
+			(at 314.96 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3904"
+			(at 314.96 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 314.96 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+			(at 309.88 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 309.88 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42ed4b62-0e79-4d59-868f-12830749db30")
+		)
+		(pin "2"
+			(uuid "fb1678ab-e7aa-41a7-8c5e-5e526f5fb115")
+		)
+		(pin "3"
+			(uuid "602110b8-3769-4496-970d-5ce1c1374b44")
+		)
+		(instances
+			(project "PROMProgrammer"
+				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:BD139")
 		(at 330.2 125.73 90)
 		(unit 1)
@@ -8496,6 +8582,82 @@
 			(project "PROMProgrammer"
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:2N3904")
+		(at 274.32 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c4919c3-f113-4382-a170-4fb4f333ad97")
+		(property "Reference" "Q2"
+			(at 269.24 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3904"
+			(at 269.24 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 269.24 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+			(at 274.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 274.32 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "883b2a10-b5bb-4ef5-a4f3-3c04bb388efe")
+		)
+		(pin "2"
+			(uuid "90038180-840f-4aef-b790-90c6884f4ae4")
+		)
+		(pin "3"
+			(uuid "52d0c9a9-164f-4064-a18e-773eef00c01c")
+		)
+		(instances
+			(project ""
+				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -9081,7 +9243,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 115.57 0)
+		(at 271.78 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9090,7 +9252,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3bc8f76-59f9-4138-9a36-151c8ab949ac")
 		(property "Reference" "#PWR059"
-			(at 271.78 121.92 0)
+			(at 271.78 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9099,7 +9261,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 120.65 0)
+			(at 271.78 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9107,7 +9269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 115.57 0)
+			(at 271.78 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9116,7 +9278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 115.57 0)
+			(at 271.78 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9125,7 +9287,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 115.57 0)
+			(at 271.78 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9140,82 +9302,6 @@
 			(project ""
 				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
 					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC108")
-		(at 295.91 203.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c50c36eb-55d4-4fe0-b454-3a5ed03e69bc")
-		(property "Reference" "Q5"
-			(at 300.99 201.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC108"
-			(at 300.99 204.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-18-3"
-			(at 300.99 205.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.b-kainka.de/Daten/Transistor/BC108.pdf"
-			(at 295.91 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 30V Vce, Low Noise General Purpose NPN Transistor, TO-18"
-			(at 295.91 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f6cf532-f291-4c13-96e7-12e739c672fd")
-		)
-		(pin "2"
-			(uuid "7ed7724d-d45f-4294-bd8a-fd8228f573c3")
-		)
-		(pin "3"
-			(uuid "4ad987e7-ebc8-4418-bb20-a754cd2ad5ea")
-		)
-		(instances
-			(project ""
-				(path "/aea5f780-7057-4d23-a657-1d11de8949a0/c73bde97-414b-42b7-8635-edb79767c4a6"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
