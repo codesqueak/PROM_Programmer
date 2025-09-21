@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-08-08")
-		(rev "3.1")
+		(date "2025-08-22")
+		(rev "3.1 ")
 	)
 	(lib_symbols
 		(symbol "4xxx:4017"

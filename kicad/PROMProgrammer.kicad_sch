@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "PROM Programmer")
-		(date "2025-05-24")
-		(rev "2.0")
+		(date "2025-08-22")
+		(rev "3.1 ")
 	)
 	(lib_symbols
 		(symbol "AA_Custom:+16V"
@@ -4069,10 +4069,6 @@
 	(no_connect
 		(at 326.39 179.07)
 		(uuid "01d7d821-9222-4a85-bf40-ae6a9de3f462")
-	)
-	(no_connect
-		(at 313.69 189.23)
-		(uuid "2dff790d-035b-4ba1-a16e-ec8037d0c395")
 	)
 	(no_connect
 		(at 339.09 64.77)
